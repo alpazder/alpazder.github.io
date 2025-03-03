@@ -1,11 +1,13 @@
+/* Ensure the body and html take up full height */
 html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Background settings */
 .background {
-    background-image: url('background.jpg');
+    background-image: url('background.jpg'); /* Adjust this path if needed */
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -14,6 +16,7 @@ html, body {
     align-items: center;
 }
 
+/* Profile photo settings */
 .profile-photo {
     width: 200px; /* Adjust the size as you want */
     height: 200px;
