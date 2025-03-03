@@ -1,21 +1,29 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .profile-photo {
-    width: 15px;
-    height: 10px;
-    border-radius: 5%;
+    width: 150px;  /* Adjust to your preferred size */
+    height: 150px;
+    border-radius: 50%;  /* Makes it round */
     border: 3px solid white;
-    margin-bottom: 2px;
+    object-fit: cover;  /* Ensures it crops properly */
 }
