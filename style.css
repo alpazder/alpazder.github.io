@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: black;
 }
 
 /* Background settings */
@@ -16,11 +17,40 @@ html, body {
     align-items: center;
 }
 
+/* Content */
+.content {
+    text-align: center;
+    color: white;
+}
+
 /* Profile photo settings */
 .profile-photo {
-    width: 200px; /* Adjust the size as you want */
+    width: 200px; /* Adjust the size as needed */
     height: 200px;
     border-radius: 50%; /* Makes the image circular */
     border: 5px solid white;
     object-fit: cover; /* Ensures the image maintains aspect ratio inside the circle */
+}
+
+/* Name styling */
+.name {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Cursor animation */
+.cursor {
+    display: inline-block;
+    width: 5px;
+    background-color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
