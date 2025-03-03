@@ -1,29 +1,27 @@
-body {
+/* Make sure the page takes up the full height of the viewport */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.background {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-}
-
-.container {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+}
+
+.content {
+    text-align: center;
 }
 
 .profile-photo {
-    width: 150px;  /* Adjust to your preferred size */
-    height: 150px;
-    border-radius: 50%;  /* Makes it round */
-    border: 3px solid white;
-    object-fit: cover;  /* Ensures it crops properly */
+    width: 200px; /* You can adjust this size */
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
 }
