@@ -27,3 +27,7 @@ function typeEffect() {
 
 setTimeout(typeEffect, 500); // Initial delay before typing starts
 
+function toggleMenu() {
+    const menu = document.querySelector(".nav-links");
+    menu.classList.toggle("show");
+}
