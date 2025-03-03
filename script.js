@@ -12,15 +12,17 @@ function typeEffect() {
         index--;
     }
 
+    let speed = isDeleting ? 50 : 100; // Typing speed (deletes faster)
+
     if (index === text.length) {
         isDeleting = true;
-        setTimeout(typeEffect, 1000); // Wait before deleting
+        speed = 1000; // Pause before deleting
     } else if (index === 0) {
         isDeleting = false;
-        setTimeout(typeEffect, 500); // Wait before typing again
+        speed = 500; // Pause before typing again
     }
 
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+    setTimeout(typeEffect, speed);
 }
 
-typeEffect();
+setTimeout(typeEffect, 500); // Initial delay before typing starts
