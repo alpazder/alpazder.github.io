@@ -54,25 +54,12 @@ html, body {
         opacity: 0;
     }
 }
+
 /* Normal text for the additional phrases below the animation */
 .additional-text {
     font-size: 18px;
     margin-top: 20px;
     color: white;
     font-weight: 300; /* Light weight for a clean look */
-    opacity: 0;
-    transform: translateY(20px); /* Slight downward starting position */
-    animation: fadeInText 2s ease-out 7s forwards; /* Animation for fade-in */
-}
-
-/* Fade-in animation for normal text */
-@keyframes fadeInText {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    opacity: 1; /* Make the text immediately visible */
 }
