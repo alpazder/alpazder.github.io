@@ -26,3 +26,4 @@ function typeEffect() {
 }
 
 setTimeout(typeEffect, 500); // Initial delay before typing starts
+
