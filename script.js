@@ -1,5 +1,5 @@
 const textElement = document.getElementById("typing-text");
-const text = "Hi, I'm Alp Azder";
+const text = "Hi, I'm Alp Azder.";
 let index = 0;
 let isDeleting = false;
 
