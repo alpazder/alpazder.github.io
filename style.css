@@ -63,3 +63,65 @@ html, body {
     font-weight: 300; /* Light weight for a clean look */
     opacity: 1; /* Make the text immediately visible */
 }
+/* Menu styling */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: #444;
+}
+
+/* LinkedIn button style */
+.linkedin-btn {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f8a; /* Darker LinkedIn Blue on hover */
+}
+
+.linkedin-btn:active {
+    background-color: #003f5f; /* Darker LinkedIn Blue when clicked */
+}
