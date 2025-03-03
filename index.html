@@ -8,7 +8,38 @@
 </head>
 <body>
     <div class="background">
-        <img src="profile.jpg" alt="Your Photo" class="profile-photo">
+        <div class="content">
+            <img src="profile.jpg" alt="Your Photo" class="profile-photo">
+            <div class="typing-effect">
+                Hi, I am Alp Azder
+            </div>
+            <div class="profession">
+                <span class="text">Computer Engineer 🔌⚙✈💻</span>
+                <span class="text">Developer 👨‍💻</span>
+                <span class="text">UI/UX designer 👾</span>
+                <span class="text">Linux enthusiast 😍</span>
+                <span class="text">Embedded developer 🚀</span>
+                <span class="text">And much more...</span>
+            </div>
+        </div>
     </div>
+
+    <script>
+        // Typing animation functionality for the profession text
+        const professionText = document.querySelector('.profession');
+        const texts = professionText.querySelectorAll('.text');
+        let currentText = 0;
+
+        function showText(index) {
+            texts[index].style.animation = 'professionText 1s ease-out forwards';
+        }
+
+        setInterval(() => {
+            if (currentText < texts.length) {
+                showText(currentText);
+                currentText++;
+            }
+        }, 2000);  // Time interval for each text to appear
+    </script>
 </body>
 </html>
